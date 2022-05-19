@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可展开的ExpandTextView"
+                android:textSize="20sp"
+                android:textColor="@color/purple_500"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.example.expandtextview.text.ExpandTextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/expandTextView"
+                android:textSize="20sp"
+                app:maxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可展开的ExpandTextView-收起位于下一行"
+                android:textSize="20sp"
+                android:textColor="@color/purple_500"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <com.example.expandtextview.ExpandLayout
+                android:layout_marginTop="15dp"
+                android:id="@+id/expandLayout"
+                app:expandBtnBold="true"
+                app:topicBold="true"
+                app:expandBtnMarginTop="12dp"
+                app:topicColor="@color/color_0091ff"
+                app:expandBtnColor="@color/color_0091ff"
+                app:textMaxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可展开的ExpandTextView-支持插入话题"
+                android:textSize="20sp"
+                android:textColor="@color/purple_500"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.example.expandtextview.ExpandLayout
+                android:layout_marginTop="15dp"
+                android:id="@+id/expandLayout2"
+                app:expandBtnBold="true"
+                app:topicBold="true"
+                app:expandBtnMarginTop="12dp"
+                app:topicColor="@color/color_0091ff"
+                app:expandBtnColor="@color/color_0091ff"
+                app:textMaxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>

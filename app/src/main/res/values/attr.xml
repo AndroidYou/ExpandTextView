@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ExpandTextView">
+        <attr name="maxLines" format="reference|integer" />
+
+        <attr name="expandHint" format="reference|string" /><!--"to expand" hint string, default is "Expand"：展开提示字符串，默认值为“展开”-->
+        <attr name="shrinkHint" format="reference|string" /><!--"to shrink" hint string, default is "Shrink"：收缩提示字符串，默认值为“收缩”-->
+
+        <attr name="expandHintColor" format="reference|color" /><!--text color of "toExpandHint"：“toExpandHint”的文本颜色-->
+        <attr name="shrinkHintColor" format="reference|color" /><!--text color of "toShrinkHint"：“toShrinkHint”的文本颜色-->
+
+        <attr name="isExpend" format="boolean"><!--init state, default is shrink：初始化状态，默认为收缩-->
+
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="LoadingView">
+        <!--进度条初始颜色-->
+        <attr name="progressColor" format="string"></attr>
+        <!--进度条最小宽度即初始宽度-->
+        <attr name="minProgressWidth" format="dimension"></attr>
+        <!--view最小宽度-->
+        <attr name="minWidth" format="dimension"></attr>
+        <!--view最小高度-->
+        <attr name="minHeight" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="ExpandLayout">
+        <!--话题颜色-->
+        <attr name="topicColor" format="color|reference"/>
+        <!--默认文本颜色-->
+        <attr name="defaultColor" format="reference|color"/>
+        <!--默认文本字体大小-->
+        <attr name="defaultTextSize" format="dimension"/>
+        <!--展开按钮颜色-->
+        <attr name="expandBtnColor" format="color|reference"/>
+        <!--展开文本字体大小-->
+        <attr name="expandBtnTextSize" format="dimension"/>
+        <!--展开按钮是否加粗-->
+        <attr name="expandBtnBold" format="boolean"/>
+        <!--展开按钮是否加粗-->
+        <attr name="expandBtnMarginTop" format="dimension"/>
+        <!--话题是否加粗-->
+        <attr name="topicBold" format="boolean"/>
+        <!--文本最大高度-->
+        <attr name="textMaxHeight" format="dimension"/>
+        <!--文本行数-->
+        <attr name="textMaxLines" format="integer"/>
+
+
+    </declare-styleable>
+
+</resources>
